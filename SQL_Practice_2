@@ -35,3 +35,18 @@ select * from employee;
 insert into employee values
     (191452,'M.Pavan Kumar',300000,'2025-10-20'),
     (191423,'Yogananda',500000,'2025-09-19');
+
+--Example for Integrity CONSTRAINTs
+create table if not exists employee_with_constraints
+(
+    id int NOT NULL,
+    name varchar(50) NOT NULL,
+    salary DOUBLE,
+    Hiring_date DATE DEFAULT '2021-01-01',
+    UNIQUE(id),
+    CHECK (salary > 1000) 
+);
+
+select * from employee
+
+insert into employee_with_constraints values(null,'Amit',300000,'2022-09-22');
