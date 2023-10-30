@@ -49,4 +49,6 @@ create table if not exists employee_with_constraints
 
 select * from employee
 
-insert into employee_with_constraints values(null,'Amit',300000,'2022-09-22');
+insert into employee_with_constraints values(null,'Amit',300000,'2022-09-22'); 
+Output : Column 'id' cannot be null
+
