@@ -31,3 +31,7 @@ insert into employee values
     (191465,'G.Dinesh Kumar',700000,'2024-07-30');
 
 select * from employee;
+
+insert into employee values
+    (191452,'M.Pavan Kumar',300000,'2025-10-20'),
+    (191423,'Yogananda',500000,'2025-09-19');
