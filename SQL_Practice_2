@@ -1,0 +1,33 @@
+create Database SQL_Practice;
+ show Databases;
+
+ use SQL_Practice;
+
+ --Command to create a Table 
+ Create Table if not exists employee
+(
+    id int,
+    name varchar(50)
+);
+
+show create table employee;
+
+-- Command to Delete a existing Table in the Database
+drop table employee;
+
+create table if not exists employee
+(
+    id int,
+    name varchar(50),
+    salary DOUBLE,
+    Hiring_date DATE
+);
+
+-- Syntax 1 To insert data into a table
+insert into employee values
+    (191437,'D.Jagannath',5000000,'2024-03-22'),
+    (191442,'M.Shivakumar',700000,'2024-07-20'),
+    (191462,'J.kumar',800000,'2024-01-20'),
+    (191465,'G.Dinesh Kumar',700000,'2024-07-30');
+
+select * from employee;
