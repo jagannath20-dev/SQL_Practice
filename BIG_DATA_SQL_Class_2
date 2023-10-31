@@ -6,3 +6,13 @@ create table if not exists employee(
     address varchar(50),
     city varchar(50)
 );
+
+insert into employee values(1,'Shashank Mishra','RJPM','Lucknow');
+select * from employee;
+
+--Add new column named DOB into the table
+alter table employee add DOB date;
+
+--Modify existing column into a table or change data type of name column or increase the length of name column
+alter table employee modify column name varchar(100);
+select * from employee;
