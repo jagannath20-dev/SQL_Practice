@@ -16,3 +16,14 @@ alter table employee add DOB date;
 --Modify existing column into a table or change data type of name column or increase the length of name column
 alter table employee modify column name varchar(100);
 select * from employee;
+
+select * from employee;
+
+-- Delete existing column from given Table or remove city column from employee table
+alter table employee drop column city;
+select * from employee
+
+-- Rename the column name to Full name
+alter table employee rename column name to full_name;
+
+select * from employee;
