@@ -27,3 +27,17 @@ select * from employee
 alter table employee rename column name to full_name;
 
 select * from employee;
+
+--add unique integrity constraint on id COLUMN
+
+alter table employee add constraint id unique(id);
+
+select * from employee;
+
+-- Drop constraint from existing Table
+
+alter table employee drop constraint id;
+
+insert into employee values(1,'Shashank Mishra','RJPM','2021-08-09');
+
+select * from employee;
