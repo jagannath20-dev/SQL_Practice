@@ -1,0 +1,8 @@
+create Database SQL_Class_2;
+Use SQL_Class_2;
+create table if not exists employee(
+    id int,
+    name varchar(50),
+    address varchar(50),
+    city varchar(50)
+);
