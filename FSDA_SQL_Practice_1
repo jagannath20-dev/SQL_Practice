@@ -1,1 +1,66 @@
 
+create database dress_data;
+
+Use dress_data;
+
+create table if not exists dress(
+    `Dress_ID` varchar(50),
+    `Style` varchar(30),
+    `Price` varchar(30),
+    `Rating` varchar(30),
+    `Size` varchar(30),
+    `Season` varchar(30),
+    `NeckLine`	varchar(30),	
+    `SleeveLength` varchar(30),		
+    `waiseline`	varchar(30),	
+    `Material`	varchar(30),	
+    `FabricType`	varchar(30),	
+    `Decoration`	varchar(30),	
+    `Pattern Type` varchar(30),		
+    `Recommendation` varchar(30));
+
+create database used; 
+
+use dress_data;
+drop database used;
+
+INSERT INTO dress (Dress_ID, `Style`, Price, Rating, `Size`, Season, Neckline, SleeveLength, waiseline, Material, FabricType, Decoration, `Pattern Type`, Recommendation)
+VALUES
+(1190380701, 'vintage', 'High', 0, 'L', 'Automn', 'o-neck', 'full', 'natural', 'polyster', NULL, NULL, 'print', 0),
+(966005983, 'Brief', 'Average', 4.6, 'L', 'Spring', 'o-neck', 'full', 'natural', 'silk', 'chiffon', 'embroidery', 'print', 1),
+(876339541, 'cute', 'Low', 4.5, 'M', 'Summer', 'o-neck', 'butterfly', 'natural', 'chiffonfabric', 'chiffon', 'bow', 'dot', 0),
+(1068332458, 'bohemian', 'Low', 0, 'M', 'Summer', 'v-neck', 'sleeveless', 'empire', NULL, NULL, NULL, 'print', 0),
+(1220707172, 'Casual', 'Average', 0, 'XL', 'Summer', 'o-neck', 'full', NULL, 'cotton', NULL, NULL, 'solid', 0),
+(1219677488, 'Novelty', 'Average', 0, 'free', 'Automn', 'o-neck', 'short', 'natural', 'polyster', 'broadcloth', 'lace', NULL, 0),
+(1113094204, 'Flare', 'Average', 0, 'free', 'Spring', 'v-neck', 'short', 'empire', 'cotton', 'broadcloth', 'beading', 'solid', 1),
+(985292672, 'bohemian', 'Low', 0, 'free', 'Summer', 'v-neck', 'sleeveless', 'natural', 'nylon', 'chiffon', NULL, NULL, 1),
+(1117293701, 'party', 'Average', 5, 'free', 'Summer', 'o-neck', 'full', 'natural', 'polyster', 'broadcloth', 'lace', 'solid', 0),
+(898481530, 'Flare', 'Average', 0, 'free', 'Spring', 'v-neck', 'short', NULL, 'nylon', NULL, NULL, 'animal', 0),
+(957723897, 'sexy', 'Low', 4.7, 'M', 'Winter', 'o-neck', 'threequarter', NULL, NULL, 'chiffon', 'lace', 'print', 1),
+(749031896, 'vintage', 'Average', 4.8, 'M', 'Summer', 'o-neck', 'short', 'empire', 'cotton', 'jersey', NULL, 'animal', 1),
+(1055411544, 'Casual', 'Low', 5, 'M', 'Summer', 'boat-neck', 'short', NULL, 'cotton', NULL, 'sashes', 'solid', 0),
+(1162628131, 'Casual', 'Low', 0, 'free', 'Winter', 'boat-neck', 'full', NULL, 'other', 'other', 'lace', NULL, 0),
+(624314841, 'cute', 'Average', 4.7, 'L', 'spring', 'o-neck', 'short', NULL, 'cotton', NULL, 'sashes', 'solid', 1),
+(830467746, 'bohemian', 'Medium', 5, 'free', 'Automn', 'o-neck', 'full', 'natural', NULL, NULL, 'hollowout', 'patchwork', 1),
+(840857118, 'Brief', 'Average', 0, 'M', 'Winter', 'peterpan-collor', 'threequarter', 'natural', 'cotton', NULL, NULL, 'patchwork', 0),
+(1113221101, 'Sexy', 'Average', 5, 'M', 'Automn', 'o-neck', 'sleeveless', 'empire', 'milksilk', NULL, NULL, NULL, 1),
+(861754372, 'Sexy', 'Average', 4.5, 'L', 'Automn', 'o-neck', 'full', NULL, 'cotton', NULL, 'beading', 'solid', 0),
+(856178100, 'Casual', 'Low', 4.3, 'M', 'Summer', 'o-neck', 'sleeveless', 'natural', NULL, 'chiffon', NULL, 'solid', 0),
+(1122989777, 'Brief', 'Low', 4, 'XL', 'Summer', 'v-neck', 'short', 'natural', 'cotton', NULL, 'pockets', 'solid', 0),
+(840516484, 'Sexy', 'Average', 4.7, 'S', 'Summer', 'v-neck', 'sleeveless', 'empire', 'cotton', NULL, 'sequined', 'solid', 1),
+(768517084, 'Sexy', 'Average', 0, 'free', 'Automn', 'v-neck', 'sleeveless', 'natural', 'polyster', NULL, 'lace', 'patchwork', 0),
+(1139843344, 'Sexy', 'Average', 0, 'M', 'Automn', 'o-neck', 'sleeveless', 'empire', 'cotton', 'broadcloth', NULL, 'print', 0),
+(1004212992, 'Sexy', 'Average', 4.7, 'M', 'Spring', 'o-neck', 'sleeveless', 'natural', NULL, NULL, NULL, 'solid', 1),
+(1235426503, 'Casual', 'Low', 0, 'L', 'Summer', 'o-neck', 'sleeveless', 'natural', 'cotton', 'jersey', NULL, 'print', 0),
+(942808364, 'cute', 'Low', 4.3, 'free', 'Automn', 'o-neck', 'sleeveless', 'natural', 'polyster', 'chiffon', 'sashes', 'striped', 0),
+(629131530, 'cute', 'Low', 4.7, 'M', 'Spring', 'ruffled', 'short', 'empire', 'chiffonfabric', 'chiffon', 'bow', 'dot', 1),
+(851945460, 'Casual', 'Average', 4.6, 'L', 'Automn', 'o-neck', 'sleeveless', 'empire', 'polyster', 'chiffon', 'ruffles', 'solid', 0),
+(1150275464, 'Casual', 'Low', 0, 'M', 'Spring', 'o-neck', 'sleeveless', 'natural', 'silk', 'chiffon', 'applique', 'solid', 1),
+(1026634314, 'Casual', 'Average', 4.4, 'L', 'Automn', 'o-neck', 'sleeveless', 'natural', 'linen', 'chiffon', 'ruffles', 'animal', 0),
+(978773911, 'Brief', 'Average', 4.3, 'L', 'Spring', 'o-neck', 'sleeveless', 'empire', NULL, NULL, 'bow', 'solid', 1),
+(827791337, 'party', 'High', 4.7, 'M', 'Spring', 'o-neck', 'threequarter', NULL, NULL, NULL, NULL, 'print', 0),
+(640823350, 'Casual', 'Low', 4.6, 'free', 'Winter', 'boat-neck', 'full', 'natural', 'cotton', NULL, NULL, 'patchwork', 1),
+(801861988, 'vintage', 'Average', 4.6, 'free', 'Winter', 'o-neck', 'full', 'natural', NULL, 'chiffon', NULL, 'print', 1),
+(1060207186, 'Brief', 'Average', 0, 'M', 'Automn', 'o-neck', 'short', 'natural', 'cotton', NULL, NULL, 'print', 0),
+(1054679816, 'party', 'Average', 4.6, 'M', 'Winter', 'o-neck', 'sleeveless', 'natural', 'cotton', NULL, 'lace', 'solid', 1),
+(941190190, 'Casual', 'Average', 4.5, 'M', 'Spring', 'v-neck', 'short', 'empire', 'cotton', NULL, 'button', 'solid', 1);
