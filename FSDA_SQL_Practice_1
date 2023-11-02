@@ -64,3 +64,4 @@ VALUES
 (1060207186, 'Brief', 'Average', 0, 'M', 'Automn', 'o-neck', 'short', 'natural', 'cotton', NULL, NULL, 'print', 0),
 (1054679816, 'party', 'Average', 4.6, 'M', 'Winter', 'o-neck', 'sleeveless', 'natural', 'cotton', NULL, 'lace', 'solid', 1),
 (941190190, 'Casual', 'Average', 4.5, 'M', 'Spring', 'v-neck', 'short', 'empire', 'cotton', NULL, 'button', 'solid', 1);
+select * from dress_data;
